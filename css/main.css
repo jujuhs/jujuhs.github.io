@@ -2,25 +2,21 @@ body {
 font-family: 'Gothic A1', sans-serif;
 }
 
-*{
-margin: 0;
-padding: 0;
-}
 
 #titre{
-font-size:50px;
+font-size:60px;
 padding-top:10px;
-padding-bottom: 5px;
+padding-bottom:15px;
 text-align: center;
 box-sizing: Border_box;
 height: 100%;
-border-color:#000;
-
 background-clip:border-box;
 }
 
 
 #sous-titre{
+font-size:30px;
+
 padding-top:7px;
 padding-bottom: 7px;
 color: white;
@@ -33,30 +29,42 @@ background: #000;
 .presentation{
  display: grid;
   grid-template-columns:
-    1fr 1fr;
+  1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "photo-a photo-b"
-  height: 100px;
+    "photo-a photo-b";
+  height: 300px;
   width: 100%;
-  text-align: center;
-margin-top:10px;
-margin-left:auto;
-margin-right:auto;
 }
-
+@media screen and (max-width: 900px) {
+    .presentation {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "photo-a"
+          "photo-b";
+        height: 100%;
+        width: 100%;
+      }
+    }
 img.photo {
-width:80%;
-height:auto;
+width:auto;
+height:300px;
 }
 #blague, #reponse{
-font-size:30px;
-padding-top:10px;
+font-size:40px;
+padding-top:20px;
 padding-bottom: 5px;
 text-align: center;
 box-sizing: Border_box;
 height: 100%;
 border-color:#000;
-
 background-clip:border-box;
+}
+
+.phototest{
+margin:10px;
+margin-left:auto;
+margin-right:auto;
 }
