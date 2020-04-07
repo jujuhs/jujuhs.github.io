@@ -36,7 +36,7 @@ background: #000;
   height: 300px;
   width: 100%;
 }
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 400px) {
     .presentation {
         display: grid;
         grid-template-columns: auto;
